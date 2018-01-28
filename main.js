@@ -1,0 +1,25 @@
+console.log('main.js is loaded');
+
+// Initial assembly of the page by using IIFE
+(() => {
+	let navElement = $('<navbar>', {class: 'navbar bg-dark text-white'});;
+	navElement.append($('<p>', {class: 'text-center', text: 'Earth Time'}));
+	$('#main').append(navElement);
+
+	let bodyElement = $('<>')
+});
+// })();
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+
+}
